@@ -1,4 +1,12 @@
 {
+  "users" : [ 
+    {         "id" : 1 ,
+              "username": "FeresMechmech",
+              "password": "27147231"     } ,
+             { "id" : 2 ,
+              "username": "ameni",
+              "password": "rommene"    }  
+   ],
   "posts": [
     {
       "id": 1,
@@ -76,6 +84,15 @@
       "rating": "4.6",
       "category": "psychology",
       "id": 9
+    },
+    {
+      "name": "The pure soul",
+      "writer": "Scarlet Jhonson",
+      "rating": "3.9",
+      "category": "psychology",
+      "id": 10
     }
   ]
+
+ 
 }

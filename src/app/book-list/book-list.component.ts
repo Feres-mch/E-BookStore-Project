@@ -10,7 +10,8 @@ import { BookService } from '../service/book.service';
 export class BookListComponent implements OnInit {
  book : Book ; 
   ListBooks : Book [] ; 
-  z : string ; 
+  z : string ;
+   
   ListFilter : string = '' ; 
   constructor(private myService : BookService)   { }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../model/User';
 import { Router } from '@angular/router';
-import { FormGroup, FormControl } from '@angular/forms';
+import { UserService } from '../service/user.service';
 
 @Component({
   selector: 'app-authentification',
@@ -10,37 +10,35 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class AuthentificationComponent implements OnInit {
 
-  constructor(private router:Router) { }
-
-  
-
-  ListUsers : User [] = [ 
-    { usernamer : 'FeresMechmech', password : '27147231'}
-  ] ;  
+  constructor(private myService :UserService , private router:Router) { }
+ 
 
   UserName:string;
   PassWord:string;
-  loginVal:boolean = false; 
-  formlogin : FormGroup ; 
+  ListUsers : User []; 
+  loginVal:boolean = false;
  
   
 
 
-  login (UserName,PassWord) { 
-
-    for (let i of this.ListUsers) {
-
-      if (UserName === i.usernamer  && PassWord === i.password ) {
-        this.router.navigate(['Paged_acc']);
-} 
-else  this.loginVal = true ;
-  }}
-
-ngOnInit(): void {
+  ngOnInit(): void {
   
-  this.formlogin = new FormGroup ({
-    UserName :  new FormControl ('feres') ,
-    PassWord : new FormControl ('mechmech') , 
-})
-}}
+    this.myService.GetUser().subscribe((data : User [])=>this.ListUsers= data) ;  
+  
+  } 
+  
+  login (UserName : string, PassWord : string) { 
+  
+    for (let i of this.ListUsers) {
+  
+      if (UserName === i.username  && PassWord === i.password ) {
+        const id:number = i.id ; 
+        this.router.navigate(['Paged_acc']);
+  } 
+  else  this.loginVal = true ;
+  }}
+  }
+
+
+
 

@@ -38,6 +38,10 @@ DeleteData (myObject: Book | number): Observable<Book> {
 // get by id
       GetBookById(id : number):Observable<Book>{
         return this.http.get<Book>(this.url+'/'+id);
+      } 
+
+      GetBookByCategory (category : string) : Observable<Book []> { 
+        return this.http.get<Book []>(this.url+'/'+category) ; 
       }
 
 
