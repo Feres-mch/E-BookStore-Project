@@ -1,0 +1,55 @@
+
+
+<div class="jumbotron">
+  
+
+<a routerLink="/AddBook"><button class="btn btn-outline-dark btn-lg">Add Book</button></a> <br>
+
+<label> {{z}}</label> <br> 
+
+<div class="my-2 my-lg-10 pos">
+  <input class=" mr-sm-2" type="text" placeholder="What do you need ?" [(ngModel)] ='ListFilter'>
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> 
+  <p><strong>Filtered By :</strong> {{ListFilter}}</p>
+</div> <br>
+
+<div> 
+
+    <table class="table">
+
+
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Writer</th> 
+            <th scope="col">Rating </th>
+            <th scope="col">Cathegorie</th> 
+            <th scope="col">Delete</th> 
+            <th scope="col">Update</th> 
+
+          </tr>
+        </thead>
+        <tbody *ngFor ="let x of ListBooks">
+          <tr>
+            <th scope="row">{{x.id}}</th>
+            <td>{{x.name}}</td>
+                <td>{{x.writer}}</td> 
+                <td><app-star
+                  [rating] = 'x.rating' 
+                  (ratingClicked) ='onRatingClicked($event)'
+                  ></app-star></td> 
+                <td>{{x.category}}</td>
+
+                <td><button  class="btn btn-primary btn-danger" (click)="DeleteBook(x)">Delete</button></td>
+                <td>
+                    <a [routerLink]="['/UpdateBook',x.id]"><button  class="btn btn-success">Update</button></a>
+                </td>
+          </tr>
+         
+        </tbody>
+      </table>
+
+</div> 
+</div> 
+

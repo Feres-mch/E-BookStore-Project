@@ -1,0 +1,21 @@
+<form #formulaire="ngForm">
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="name"  name="name" minlength="4"required  
+        [(ngModel)]="book.name" #name="ngModel">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="writer" name="writer" minlength="4"required  
+        [(ngModel)]="book.writer" #writer="ngModel">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="rating" name="rating" required  
+        [(ngModel)]="book.rating" #rating="ngModel">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="category" name="category" required  
+        [(ngModel)]="book.category" #category="ngModel">
+      </div>
+    </div>
+  </form> 
+  <div><button [disabled]="formulaire.invalid" type="submit" class="btn btn-primary" (click)="UpdateBook(book)">Confirm</button></div>

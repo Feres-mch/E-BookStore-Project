@@ -1,0 +1,130 @@
+body {
+    overflow-x: hidden;
+  }
+.jumbotron {
+
+    size: 70%; 
+    background-color: rgb(230, 115, 87); 
+}
+.image1 {
+width: 100% ;   
+height : "200" ;
+}
+
+
+/* ------------------------------------------------------- */ 
+
+
+/* Container holding the image and the text */
+.container1 {
+    position: relative;
+    text-align: center;
+    background-color: rgb(230, 115, 87);   }
+.container2 {
+    position: relative;
+    text-align: center;
+    background-color: rgba(104, 219, 228, 0.678);
+  }
+  .container3 {
+    position: relative;
+    text-align: center;
+    align-self: center; 
+    align-content: center;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 35%;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn.btn-outline-dark.btn-lg {
+      background-color: dimgrey;
+  }
+
+
+  /* ROWS */ 
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+      align-content: center;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .IMG { 
+
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    width:32%;
+    height:100%;
+    object-fit:cover;
+
+  } 
+  .row {
+
+    align-content: center;
+  } 
+  .btn_img { 
+
+    width:60%;
+    align-self: center;
+
+  }
+  .imgtxt {
+
+background-color: goldenrod;  }

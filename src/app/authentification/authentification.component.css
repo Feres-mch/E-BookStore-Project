@@ -1,0 +1,56 @@
+.bg-image{
+  background: url(../../assets/background.jpg) ;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  opacity: 0.9;
+  min-height: 100vh;
+}
+
+.login-area{
+background-color:#EAEDED  ;
+font-family: 'Courier New', Courier, monospace;
+color: black;
+font-weight: bold;
+}
+
+
+
+.imge_logo{
+  top: 5%;
+  width: 100%;
+}
+
+.registre_point{
+  margin-top: 10px;
+}
+
+.button_login{
+  background-color: #f5a91d ;
+  border-color: #f5a91d;
+  width: 50%;
+  margin-top: 25px;
+  font-size: 30px;
+  color: black;
+}
+
+.button_login:hover{
+  color: black;
+  background-color: white;
+}
+
+.form-group{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.form-control{
+  border-radius: 30px;
+}
+
+.name_logo{
+  font-weight: bold;
+  padding-top: 15px;
+}

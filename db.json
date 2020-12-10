@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "Dracula ",
+      "writer": "Henry Biker",
+      "rating": "5",
+      "category": "horror"
+    },
+    {
+      "id": 2,
+      "name": "Eline à l'école 2",
+      "writer": "Sébastian lepoix",
+      "rating": 4.7,
+      "category": "kids"
+    },
+    {
+      "id": 3,
+      "name": "sebastien ",
+      "writer": "Le champs",
+      "rating": "4.2",
+      "category": "psychology"
+    },
+    {
+      "id": 4,
+      "name": "Saint Bernard au congres",
+      "writer": "Paulo Cohelo",
+      "rating": "3.5",
+      "category": "horror"
+    },
+    {
+      "name": "The mountains between us",
+      "writer": "Alfredo",
+      "rating": "4.8",
+      "category": "psychology",
+      "id": 5
+    },
+    {
+      "name": "Science of mind",
+      "writer": "Roman Pierce",
+      "rating": "3.9",
+      "category": "psychology",
+      "id": 6
+    },
+    {
+      "name": "Maradona, the wonder kid",
+      "writer": "Requelmei alphonso",
+      "rating": "3",
+      "category": "psychology",
+      "id": 7
+    },
+    {
+      "name": "Les Sept Habitudes des gens efficaces",
+      "writer": "Stephen Covey",
+      "rating": "4.7",
+      "category": "psychology",
+      "id": 8
+    },
+    {
+      "name": "the theory of things",
+      "writer": "Steave Hawkings",
+      "rating": "4.6",
+      "category": "psychology",
+      "id": 9
+    }
+  ]
+}
