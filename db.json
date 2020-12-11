@@ -28,7 +28,7 @@
   "books": [
     {
       "id": 1,
-      "name": "Dracula ",
+      "name": "Dracula",
       "writer": "Henry Biker",
       "rating": "5",
       "category": "horror"
@@ -42,7 +42,7 @@
     },
     {
       "id": 3,
-      "name": "sebastien ",
+      "name": "sebastien",
       "writer": "Le champs",
       "rating": "4.2",
       "category": "psychology"

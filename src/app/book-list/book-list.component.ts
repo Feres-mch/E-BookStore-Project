@@ -12,17 +12,25 @@ export class BookListComponent implements OnInit {
   ListBooks : Book [] ; 
   z : string ;
    
-  ListFilter : string = '' ; 
+   name : string  ; 
+   category : string  ; 
+   writer : string  ; 
+
   constructor(private myService : BookService)   { }
 
   onRatingClicked (message : string) : void { 
    this.z =  message ;  
-
+   
   }
 
   ngOnInit(): void {
     this.getAllUsers () ; 
+    this.name = '' ; 
+    this.category = '' ; 
+    this.writer = '' ; 
+
   }
+  
 getAllUsers () { 
   this.myService.GetData().subscribe( (data : Book [] )  => this.ListBooks= data ); 
 }

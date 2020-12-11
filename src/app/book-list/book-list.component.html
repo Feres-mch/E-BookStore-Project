@@ -7,10 +7,19 @@
 
 <label> {{z}}</label> <br> 
 
-<div class="my-2 my-lg-10 pos">
-  <input class=" mr-sm-2" type="text" placeholder="What do you need ?" [(ngModel)] ='ListFilter'>
-  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> 
-  <p><strong>Filtered By :</strong> {{ListFilter}}</p>
+<div class="my-2 my-lg-10 ">
+  <div class="pos1"> 
+    <input class=" mr-sm-2 " type="text"  [(ngModel)] ='name'>
+  <p><strong>Filtered By name:</strong> {{name}}</p>
+  </div>
+  <div class="pos2">
+    <input class=" mr-sm-2" type="text"  [(ngModel)] ='category'>
+  <p><strong>Filtered By category:</strong> {{category}}</p>
+  </div>
+  <div class="pos3">
+    <input class=" mr-sm-2" type="text"  [(ngModel)] ='writer'>
+  <p><strong>Filtered By writer:</strong> {{writer}}</p>
+  </div>
 </div> <br>
 
 <div> 
@@ -31,7 +40,9 @@
           </tr>
         </thead>
         <tbody *ngFor ="let x of ListBooks">
-          <tr>
+          <tr *ngIf ="(name == '' && writer =='' && category =='') ||
+                        (x.name.indexOf(name) != -1 && x.category.indexOf(category) != -1 && x.writer.indexOf(writer) != -1)
+           ">
             <th scope="row">{{x.id}}</th>
             <td>{{x.name}}</td>
                 <td>{{x.writer}}</td> 
