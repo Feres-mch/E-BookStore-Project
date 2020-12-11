@@ -1,1 +1,30 @@
-<p>horror-books works!</p>
+<div class="jumbotron">
+    <div> 
+    
+        <table class="table">
+    
+    
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Writer</th> 
+                <th scope="col">Rating </th>
+                
+              </tr>
+            </thead>
+            <tbody *ngFor ="let x of ListBook">
+              <tr *ngIf = "x.category === 'horror'">
+                <td>{{x.name}}</td>
+                    <td>{{x.writer}}</td> 
+                    <td><app-star
+                      [rating] = 'x.rating' 
+                      (ratingClicked) ='onRatingClicked($event)'
+                      ></app-star></td> 
+    
+              </tr>
+             
+            </tbody>
+          </table>
+    
+    </div> 
+    </div> 

@@ -1,12 +1,16 @@
 {
-  "users" : [ 
-    {         "id" : 1 ,
-              "username": "FeresMechmech",
-              "password": "27147231"     } ,
-             { "id" : 2 ,
-              "username": "ameni",
-              "password": "rommene"    }  
-   ],
+  "users": [
+    {
+      "id": 1,
+      "username": "FeresMechmech",
+      "password": "27147231"
+    },
+    {
+      "id": 2,
+      "username": "ameni",
+      "password": "rommene"
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -31,7 +35,7 @@
     },
     {
       "id": 2,
-      "name": "Eline à l'école 2",
+      "name": "Eline à l'école",
       "writer": "Sébastian lepoix",
       "rating": 4.7,
       "category": "kids"
@@ -91,8 +95,13 @@
       "rating": "3.9",
       "category": "psychology",
       "id": 10
+    },
+    {
+      "name": "Sébastien et ses amis",
+      "writer": "LeChamps",
+      "rating": "4.8",
+      "category": "kids",
+      "id": 11
     }
   ]
-
- 
 }

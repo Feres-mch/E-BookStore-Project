@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddBookComponent } from './add-book/add-book.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
 import { StarComponent } from './star/star.component';
+import { IWantComponent } from './iwant/iwant.component';
+import { IHaveComponent } from './ihave/ihave.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { StarComponent } from './star/star.component';
     AuthentificationComponent,
     AddBookComponent,
     UpdateBookComponent,
-    StarComponent
+    StarComponent,
+    IWantComponent,
+    IHaveComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../model/book';
+import { BookService } from '../service/book.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pshychology-books',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PshychologyBooksComponent implements OnInit {
 
-  constructor() { }
+  book : Book; 
+  ListBook : Book [] ;  
+  
+  
+  constructor(private myService : BookService, private ActivatedRoute : ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    this.myService.GetData().subscribe( (data : Book [] )  => this.ListBook= data ); 
+
+   
+
+
+
   }
 
 }

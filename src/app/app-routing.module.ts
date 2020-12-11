@@ -8,6 +8,8 @@ import { KidsBooksComponent } from './kids-books/kids-books.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
+import { IHaveComponent } from './ihave/ihave.component';
+import { IWantComponent } from './iwant/iwant.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,12 @@ const routes: Routes = [
   { path : 'bookList' , component : BookListComponent},
   { path : 'AddBook' , component : AddBookComponent} , 
   { path : 'UpdateBook/:id' , component : UpdateBookComponent} ,
+  { path : 'Ihave' , component : IHaveComponent} , 
+  { path : 'Iwant' , component : IWantComponent} ,
   { path : ''           , component : AuthentificationComponent} 
+ 
+ 
+
 
 ];
 

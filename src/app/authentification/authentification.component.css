@@ -3,13 +3,12 @@
   background-size: cover;
   background-position: center center;
   overflow: hidden;
-  min-height: 100vh;
 }
 
 .login-area{
-background-color:#EAEDED  ;
+background-color:#000000  ;
 font-family: 'Courier New', Courier, monospace;
-color: black;
+color: rgb(253, 167, 6);
 font-weight: bold;
 }
 
@@ -52,4 +51,7 @@ font-weight: bold;
 .name_logo{
   font-weight: bold;
   padding-top: 15px;
+} 
+.xx { 
+  background-color: black;
 }
